@@ -10,11 +10,13 @@ import App from './App';  // without file extention, it would assume automatical
 import Hello from './Hello.js'; //  Hello is my practicing first component.
 
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello />
+    <Hello demo_props={"I am " + "confused."}/>
+    <App />
   </React.StrictMode>
 );
 
